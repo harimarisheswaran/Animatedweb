@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA | Fine Dining & Culinary Artistry</title>
+    <meta name="description" content="Experience luxury culinary artistry at Aurelia. Featuring Michelin-starred chef creations, immaculate interior ambience, and unforgettable fine dining.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-mark">A</span>
+                <span class="logo-text">AURELIA</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#chef" class="nav-link">Meet Chef</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#reservation" class="btn btn-gold-outline">Book a Table</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Scroll Canvas Hero Container -->
+    <div id="hero-scroll-container">
+        <section id="hero" class="hero-sticky">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <p class="hero-subtitle">HAUTE CUISINE & EPICUREAN ART</p>
+                <h1 class="hero-title">Experience Culinary <br><span class="text-gold">Perfection</span></h1>
+                <p class="hero-description">Scroll to discover our immersive gastropub craftsmanship and rare vintage collection.</p>
+                <div class="margin-top-md">
+                    <a href="#reservation" class="btn btn-gold">Explore Aurelia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="grid grid-2 align-center">
+                    <div class="about-images">
+                        <div class="img-wrapper img-main">
+                            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" alt="Aurelia Luxury Interior Dining">
+                        </div>
+                        <div class="img-wrapper img-secondary">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" alt="Plated Gourmet Steak Dish">
+                        </div>
+                        <div class="experience-badge">
+                            <span class="number">18+</span>
+                            <span class="text">Years of Excellence</span>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="section-header text-left">
+                            <span class="sub-heading">OUR PHILOSOPHY</span>
+                            <h2 class="section-title">Where Tradition Meets <span class="text-gold">Modern Artistry</span></h2>
+                            <div class="title-divider"></div>
+                        </div>
+                        <p class="lead-text">Founded in 2008, Aurelia brings together the finest hand-selected seasonal ingredients, ancient charcoal wood-firing techniques, and avant-garde presentation.</p>
+                        <p>Every dish tells a unique culinary story, curated meticulously by our award-winning master culinary team. Nestled in an intimate dark wood and brushed brass sanctuary, we invite you to embark on a unforgettable journey of taste, aroma, and visual elegance.</p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                                <div class="feature-info">
+                                    <h4>Organic & Farm Fresh</h4>
+                                    <p>Sourced daily from sustainable local artisan farms.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-wine-glass-empty"></i></div>
+                                <div class="feature-info">
+                                    <h4>Curated Wine Cellar</h4>
+                                    <p>Over 400 rare vintage bottles handpicked by master sommelier.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Menu Section -->
+        <section id="menu" class="section-padding bg-darker">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading">CULINARY SELECTIONS</span>
+                    <h2 class="section-title">Signature <span class="text-gold">Tasting Menu</span></h2>
+                    <div class="title-divider center"></div>
+                </div>
+
+                <div class="menu-tabs">
+                    <button class="menu-tab-btn active" data-category="starters">Starters</button>
+                    <button class="menu-tab-btn" data-category="mains">Main Courses</button>
+                    <button class="menu-tab-btn" data-category="desserts">Desserts</button>
+                    <button class="menu-tab-btn" data-category="cocktails">Artisan Drinks</button>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Starters -->
+                    <div class="menu-card" data-category="starters">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop" alt="Seared Hokkaido Scallops">
+                            <span class="menu-price">$36</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Seared Hokkaido Scallops <span class="badge">Chef Pick</span></h3>
+                            <p>Truffled cauliflower puree, crispy pancetta lardons, citrus caviar emulsion.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card" data-category="starters">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=600&auto=format&fit=crop" alt="Organic Burrata Tartare">
+                            <span class="menu-price">$28</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Organic Burrata Tartare</h3>
+                            <p>Heirloom roasted beets, toasted pine nuts, aged dark balsamic reduction.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mains -->
+                    <div class="menu-card" data-category="mains">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=600&auto=format&fit=crop" alt="A5 Wagyu Beef Tenderloin">
+                            <span class="menu-price">$95</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>A5 Wagyu Beef Tenderloin <span class="badge">Signature</span></h3>
+                            <p>Smoked bone marrow reduction, wild chanterelle mushrooms, black garlic potato pave.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card" data-category="mains">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=600&auto=format&fit=crop" alt="Pan-Roasted Chilean Sea Bass">
+                            <span class="menu-price">$68</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Pan-Roasted Chilean Sea Bass</h3>
+                            <p>Saffron foam, baby fennel confit, squid ink tuile, herb oil finish.</p>
+                        </div>
+                    </div>
+
+                    <!-- Desserts -->
+                    <div class="menu-card" data-category="desserts">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?q=80&w=600&auto=format&fit=crop" alt="Valrhona Gold Sphere">
+                            <span class="menu-price">$24</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Valrhona Gold Sphere</h3>
+                            <p>70% dark chocolate shell, salted caramel center, warm gold leaf espresso pour.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cocktails -->
+                    <div class="menu-card" data-category="cocktails">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=600&auto=format&fit=crop" alt="Smoked Old Fashioned">
+                            <span class="menu-price">$22</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Smoked Rosemary Old Fashioned</h3>
+                            <p>Single barrel bourbon, wood smoke infused, orange blossom bitters, gold dust ice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Masonry Section -->
+        <section id="gallery" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading">VISUAL EXPERIENCE</span>
+                    <h2 class="section-title">Atmosphere & <span class="text-gold">Artistry Gallery</span></h2>
+                    <div class="title-divider center"></div>
+                </div>
+
+                <div class="gallery-masonry">
+                    <div class="gallery-item" data-title="Dining Sanctuary Interior" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Interior ambience">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <h4>Dining Sanctuary Interior</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-title="Artisan Plated Wagyu Dish" data-src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Signature steak plating">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <h4>Artisan Plated Wagyu Dish</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-title="Chef Plating Precision" data-src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1200&auto=format&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800&auto=format&fit=crop" alt="Chef plating meal">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <h4>Chef Plating Precision</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-title="Private Lounge Ambience" data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop" alt="Restaurant Bar Lounge">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <h4>Private Lounge Ambience</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-title="Decadent Gold Leaf Dessert" data-src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=1200&auto=format&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=800&auto=format&fit=crop" alt="Chocolate Gourmet Dessert">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <h4>Decadent Gold Leaf Dessert</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-title="Sommelier Wine Selection" data-src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200&auto=format&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=800&auto=format&fit=crop" alt="Wine pouring into glass">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <h4>Sommelier Wine Selection</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Chef Section -->
+        <section id="chef" class="section-padding bg-darker">
+            <div class="container">
+                <div class="grid grid-2 align-center">
+                    <div class="chef-content">
+                        <div class="section-header text-left">
+                            <span class="sub-heading">MASTRO CULINARIO</span>
+                            <h2 class="section-title">Meet Executive Chef <br><span class="text-gold">Antoine Laurent</span></h2>
+                            <div class="title-divider"></div>
+                        </div>
+                        <p class="lead-text">"Cooking is not merely creating food; it is an emotional performance rendered through texture, warmth, and balance."</p>
+                        <p>Trained in Paris and Lyon, Chef Antoine Laurent spent over two decades perfecting classical French culinary techniques while integrating vibrant Asian spices and contemporary gastronomy.</p>
+                        <div class="chef-quotes">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="quote-text">Every plate served at Aurelia is created as a piece of ephemeral art intended to linger in memory long after the final course.</p>
+                        </div>
+                        <div class="chef-signature">
+                            <span class="signature-font">Antoine Laurent</span>
+                            <span class="title-tag">Executive Chef & Culinary Director</span>
+                        </div>
+                    </div>
+                    <div class="chef-image-wrap">
+                        <div class="chef-frame">
+                            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800&auto=format&fit=crop" alt="Executive Chef Antoine Laurent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section id="reservation" class="section-padding">
+            <div class="container">
+                <div class="reservation-card">
+                    <div class="section-header text-center">
+                        <span class="sub-heading">TABLE RESERVATION</span>
+                        <h2 class="section-title">Reserve Your <span class="text-gold">Dining Table</span></h2>
+                        <p class="section-subtext">Book in advance to secure an extraordinary fine dining experience.</p>
+                        <div class="title-divider center"></div>
+                    </div>
+
+                    <form class="reservation-form" id="res-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="res-name">Full Name</label>
+                                <input type="text" id="res-name" class="form-control" placeholder="e.g. Lord Alexander" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-email">Email Address</label>
+                                <input type="email" id="res-email" class="form-control" placeholder="alexander@luxury.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-phone">Phone Number</label>
+                                <input type="tel" id="res-phone" class="form-control" placeholder="+1 (555) 019-2834" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-guests">Number of Guests</label>
+                                <select id="res-guests" class="form-control" required>
+                                    <option value="2">2 Guests (Intimate Dining)</option>
+                                    <option value="4">4 Guests (Family & Friends)</option>
+                                    <option value="6">6 Guests (Party)</option>
+                                    <option value="8+">8+ Guests (VIP Lounge)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-date">Date</label>
+                                <input type="date" id="res-date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-time">Time Slot</label>
+                                <select id="res-time" class="form-control" required>
+                                    <option value="18:00">06:00 PM</option>
+                                    <option value="19:30">07:30 PM</option>
+                                    <option value="21:00">09:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group full-width margin-top-sm">
+                            <label for="res-notes">Special Occasion & Dietary Requests</label>
+                            <textarea id="res-notes" class="form-control" rows="3" placeholder="Anniversary, birthday, gluten-free, allergy notes..."></textarea>
+                        </div>
+                        <div class="text-center margin-top-md">
+                            <button type="submit" class="btn btn-gold btn-large">Confirm Table Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Slider Section -->
+        <section id="testimonials" class="section-padding bg-darker">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading">CRITICS & GUESTS</span>
+                    <h2 class="section-title">Unforgettable <span class="text-gold">Accolades</span></h2>
+                    <div class="title-divider center"></div>
+                </div>
+
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <div class="testimonial-slide">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"Aurelia redefines fine dining in the modern era. The Wagyu Tenderloin combined with the ambient frame-by-frame atmosphere made our evening truly unforgettable."</p>
+                            <div class="reviewer-info">
+                                <h4>Victoria Sterling</h4>
+                                <span>Michelin Food Critic</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"The wine pairing selected by Sommelier Marcus was perfection. Every course exceeded our high expectations. Simply world class."</p>
+                            <div class="reviewer-info">
+                                <h4>Julian Vance</h4>
+                                <span>Gastronomy Magazine</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"From the moment you step through the dark brass doors, you are transported into a world of opulent taste and luxury."</p>
+                            <div class="reviewer-info">
+                                <h4>Elena Rostova</h4>
+                                <span>Luxury Lifestyle Guide</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" id="prev-review"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="slider-dots" id="slider-dots"></div>
+                        <button class="slider-btn next-btn" id="next-review"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Map -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="grid grid-2 align-center">
+                    <div class="contact-info-wrap">
+                        <div class="section-header text-left">
+                            <span class="sub-heading">LOCATION & HOURS</span>
+                            <h2 class="section-title">Visit Our <span class="text-gold">Sanctuary</span></h2>
+                            <div class="title-divider"></div>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>742 Fifth Avenue, Suite 120, New York, NY 10019</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <h4>Dining Hours</h4>
+                                    <p>Tue - Sun: 5:00 PM – 11:30 PM</p>
+                                    <p>Monday: Closed for Private Events</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>Inquiries & Concierge</h4>
+                                    <p>concierge@aureliadining.com</p>
+                                    <p>+1 (212) 555-0899</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.997879281729!2d-73.97495022342533!3d40.76204097138541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f97bdb14b7%3A0x6b8764020c6a51d3!2s742%205th%20Ave%2C%20New%20York%2C%20NY%2010019!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Luxury Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top grid grid-4">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-mark">A</span>
+                        <span class="logo-text">AURELIA</span>
+                    </a>
+                    <p class="margin-top-sm">Embodying the pinnacle of fine dining gastronomy, wood-fired mastery, and vintage wine curations.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Tasting Menu</a></li>
+                        <li><a href="#gallery">Visual Gallery</a></li>
+                        <li><a href="#chef">Executive Chef</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Reservations</h4>
+                    <ul>
+                        <li><a href="#reservation">Book Table</a></li>
+                        <li><a href="#contact">Private Dining</a></li>
+                        <li><a href="#contact">Gift Cards</a></li>
+                        <li><a href="#contact">Press & Media</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive invitations to vintage tasting evenings.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Aurelia updates.');">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AURELIA Luxury Dining. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged gallery view">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- JavaScript Script -->
+    <script src="app.js"></script>
+</body>
+</html>
